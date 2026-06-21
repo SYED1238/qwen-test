@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auralis | Luxury Forest Sanctuary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Light Rays Overlay -->
+    <div class="light-rays"></div>
+    
+    <!-- Navigation -->
+    <nav class="navigation" id="navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">AURALIS</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#residences">Residences</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#wellness">Wellness</a></li>
+            </ul>
+            <button class="nav-cta" id="reserveBtn">Reserve</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle fade-in-up">Where Forest Meets Forever</div>
+            <h1 class="hero-title fade-in-up delay-1">AURALIS</h1>
+            <p class="hero-description fade-in-up delay-2">An immersive sanctuary nestled in the heart of an ancient emerald forest, where luxury transcends time and nature embraces elegance.</p>
+            <div class="hero-cta fade-in-up delay-3">
+                <button class="btn-primary" id="exploreBtn">Begin Your Journey</button>
+                <button class="btn-secondary" id="heroReserveBtn">Reserve Now</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to Discover</span>
+        </div>
+    </section>
+
+    <!-- Signature Residences -->
+    <section class="residences" id="residences">
+        <div class="section-header">
+            <span class="section-label">Sanctuary Living</span>
+            <h2 class="section-title">Signature Residences</h2>
+            <p class="section-description">Three extraordinary dwellings, each a masterpiece of architectural poetry and natural harmony.</p>
+        </div>
+        <div class="residences-grid">
+            <div class="residence-card" data-residence="canopy">
+                <div class="card-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Forest Canopy Villa</h3>
+                    <p class="card-description">Suspended among ancient treetops, where morning mist dances through floor-to-ceiling glass walls.</p>
+                    <div class="card-details">
+                        <span>280 sqm</span>
+                        <span>•</span>
+                        <span>Panoramic Views</span>
+                        <span>•</span>
+                        <span>Private Terrace</span>
+                    </div>
+                    <button class="card-btn">Discover More</button>
+                </div>
+            </div>
+            <div class="residence-card" data-residence="emerald">
+                <div class="card-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Emerald Pool Residence</h3>
+                    <p class="card-description">An infinity pool merges with the forest horizon, creating an illusion of swimming through emerald waters.</p>
+                    <div class="card-details">
+                        <span>320 sqm</span>
+                        <span>•</span>
+                        <span>Infinity Pool</span>
+                        <span>•</span>
+                        <span>Garden Access</span>
+                    </div>
+                    <button class="card-btn">Discover More</button>
+                </div>
+            </div>
+            <div class="residence-card" data-residence="moonlight">
+                <div class="card-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Moonlight Pavilion</h3>
+                    <p class="card-description">A celestial retreat where moonlight filters through a glass ceiling, illuminating your private sanctuary.</p>
+                    <div class="card-details">
+                        <span>350 sqm</span>
+                        <span>•</span>
+                        <span>Glass Ceiling</span>
+                        <span>•</span>
+                        <span>Observatory Deck</span>
+                    </div>
+                    <button class="card-btn">Discover More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences" id="experiences">
+        <div class="section-header centered">
+            <span class="section-label">Unforgettable Moments</span>
+            <h2 class="section-title">Curated Experiences</h2>
+        </div>
+        <div class="experiences-grid">
+            <div class="experience-item">
+                <div class="experience-icon">🍽️</div>
+                <h3>Forest Dining</h3>
+                <p>Culinary artistry beneath ancient canopies, where every meal becomes a memory etched in time.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-icon">💆</div>
+                <h3>Private Spa</h3>
+                <p>Holistic treatments inspired by forest wisdom, rejuvenating body, mind, and spirit.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-icon">🧘</div>
+                <h3>Wellness Sanctuary</h3>
+                <p>Meditation pavilions and yoga decks immersed in nature's healing embrace.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-icon">🏹</div>
+                <h3>Adventure Experiences</h3>
+                <p>Guided forest expeditions, canopy walks, and hidden waterfall discoveries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Story -->
+    <section class="architecture" id="architecture">
+        <div class="architecture-content">
+            <div class="arch-text reveal-text">
+                <span class="section-label">Design Philosophy</span>
+                <h2 class="section-title">Architecture in Harmony</h2>
+                <p class="arch-description">Auralis was conceived as a dialogue between human craftsmanship and nature's timeless beauty. Every curve, every material, every space has been meticulously designed to honor the ancient forest that cradles this sanctuary.</p>
+                <p class="arch-description">Our architects spent three years studying the land, understanding its rhythms, its light, its whispers. The result is not a building imposed upon nature, but a structure that emerges from it—like moss on stone, like light through leaves.</p>
+                <div class="arch-stats">
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Years of Design</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">47</span>
+                        <span class="stat-label">Master Craftsmen</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Sustainable Materials</span>
+                    </div>
+                </div>
+            </div>
+            <div class="arch-visual reveal-image">
+                <div class="visual-placeholder"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Experience -->
+    <section class="dining" id="dining">
+        <div class="section-header centered">
+            <span class="section-label">Culinary Excellence</span>
+            <h2 class="section-title">A Gastronomic Journey</h2>
+            <p class="section-description">Where Michelin-starred innovation meets forest-fresh ingredients.</p>
+        </div>
+        <div class="dining-showcase">
+            <div class="chef-story reveal-left">
+                <h3>Executive Chef Alexandre Dubois</h3>
+                <p>With twenty years of culinary mastery across three continents, Chef Dubois brings his philosophy of "forest-to-table transcendence" to Auralis. Each dish tells a story of the land, crafted with precision and passion.</p>
+            </div>
+            <div class="dining-gallery reveal-right">
+                <div class="gallery-item large"></div>
+                <div class="gallery-item small"></div>
+                <div class="gallery-item medium"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Sanctuary -->
+    <section class="wellness" id="wellness">
+        <div class="section-header">
+            <span class="section-label">Inner Peace</span>
+            <h2 class="section-title">Wellness Sanctuary</h2>
+            <p class="section-description">Reconnect with your essence in spaces designed for profound restoration.</p>
+        </div>
+        <div class="wellness-cards">
+            <div class="wellness-card glass-card">
+                <div class="wellness-icon">🌿</div>
+                <h3>Forest Bathing</h3>
+                <p>Immerse yourself in the Japanese art of Shinrin-yoku, guided by our wellness experts through mindful forest immersion.</p>
+            </div>
+            <div class="wellness-card glass-card">
+                <div class="wellness-icon">💫</div>
+                <h3>Sound Healing</h3>
+                <p>Vibrational therapy sessions in our crystal chamber, where sound frequencies harmonize your energy centers.</p>
+            </div>
+            <div class="wellness-card glass-card">
+                <div class="wellness-icon">🔮</div>
+                <h3>Crystal Meditation</h3>
+                <p>Private meditation pods infused with carefully selected crystals to amplify your inner journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Reservation CTA -->
+    <section class="reservation" id="reservation">
+        <div class="reservation-content">
+            <h2 class="reservation-title">Your Sanctuary Awaits</h2>
+            <p class="reservation-subtitle">Begin your journey to Auralis. Limited residences available for exclusive stays.</p>
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Arrival Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Departure Date</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Guests</label>
+                        <select required>
+                            <option value="">Select</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Residence</label>
+                        <select required>
+                            <option value="">Select Residence</option>
+                            <option value="canopy">Forest Canopy Villa</option>
+                            <option value="emerald">Emerald Pool Residence</option>
+                            <option value="moonlight">Moonlight Pavilion</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Request Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">AURALIS</span>
+                <p>A luxury forest sanctuary where nature and elegance converge.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Residences</h4>
+                    <a href="#">Forest Canopy Villa</a>
+                    <a href="#">Emerald Pool Residence</a>
+                    <a href="#">Moonlight Pavilion</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Experiences</h4>
+                    <a href="#">Dining</a>
+                    <a href="#">Spa & Wellness</a>
+                    <a href="#">Adventures</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <a href="#">reservations@auralis.com</a>
+                    <a href="#">+1 (800) AURALIS</a>
+                    <a href="#">Press Inquiries</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Auralis. All rights reserved. Crafted with excellence.</p>
+        </div>
+    </footer>
+
+    <!-- Cinematic Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-close" id="modalClose">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="modal-content" id="modalContent">
+            <!-- Dynamic content will be injected here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
